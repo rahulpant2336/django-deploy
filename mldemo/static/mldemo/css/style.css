@@ -1,0 +1,32 @@
+.page-inner-header{
+  padding: 3rem 0;
+}
+#page-top > section.page-inner-header.bg-dark.text-white > div > h1{
+  margin-top: 3rem;
+}
+.project-details-box{
+    border: 1px solid #d8d8d8;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 0px 10px 1px #d9d9d9;
+}
+.project-sub-category{
+  color: #666;
+  font-size: 1.1rem;
+}
+.project-short-descr{
+  margin: 1rem 0 2rem;
+}
+.projects-main-wrap{
+    background-color: #f3f3f3;
+}
+.result_prediction{
+    font-weight: 600;
+    font-style: italic;
+    color: #f4623a;
+    padding: 6px;
+    margin: 20px auto;
+    width: 300px;
+    background-color: #e8e8e8;
+}
