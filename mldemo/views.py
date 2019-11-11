@@ -61,13 +61,13 @@ def iris(request):
     })
 
 
-iris_model = pickle.load(open('models/regression_salary_model.pkl','rb'))
+salary_model = pickle.load(open('models/regression_salary_model.pkl','rb'))
 def salary(request):
     result_value = ''
     if request.method == 'POST':
         year_of_exp = request.POST['year_of_exp']
 
-        check_result = iris_model.predict(np.asarray([[json_convert(year_of_exp)]]))
+        check_result = salary_model.predict(np.asarray([[json_convert(year_of_exp)]]))
 
         result_value = "The best salary you should offer to him/her is Rs."+str(int(check_result[0]))
 
